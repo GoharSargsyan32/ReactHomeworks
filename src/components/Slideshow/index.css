@@ -1,0 +1,38 @@
+.slider-container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 0 auto;
+  }
+  
+  .slider-container > .slider-image {
+    width: 100%;
+    height: 70%;
+    box-shadow: 5px 5px 5px 5px rgb(155, 150, 150);
+    
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .slider-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .slider-indicator {
+    font-size: 18px;
+    background-color: beige;
+  }
+  
