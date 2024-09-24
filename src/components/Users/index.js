@@ -40,10 +40,6 @@ class Users extends React.Component {
     console.log(this.state)
     return (
       <div>
-        <button disabled={this.state.page===1} onClick={()=>this.handleChangePagination("prev")}>prev</button>
-        <span>{this.state.page}</span>
-        <button onClick={()=>this.handleChangePagination("next")}>next</button>
-
         <table>
           <thead>
             <tr>
@@ -68,6 +64,11 @@ class Users extends React.Component {
             })}
           </tbody>
         </table>
+        <div>
+            <button disabled={this.state.page===1} onClick={()=>this.handleChangePagination("prev")}>prev</button>
+            <span>{this.state.page}</span>
+            <button onClick={()=>this.handleChangePagination("next")}>next</button>
+        </div>
       </div>
     );
   }
